@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Aclonica&display=swap');
+
 body { 
     margin: 0px; 
     padding: 0px;
@@ -11,3 +13,15 @@ body {
     box-sizing: border-box;
 }
 
+
+.title-text {
+    font-family: 'Aclonica', sans-serif;;
+}
+
+.content-text{
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.no-move:hover{
+    margin-bottom: -4px;
+}
