@@ -12,7 +12,7 @@ const headingStyles = {
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-        <h1 style={headingStyles}>
+        <h1 style={headingStyles} className="text-blue-600">
           dinoBeachdev
         </h1>
         {/* <StaticImage

@@ -4,7 +4,7 @@ import "../styles/style.css"
 import Header from './header';
 // styles
 const pageStyles = {
-    color: "#5D6567",
+    // color: "#5D6567",
     backgroundColor: "#FAF6EE",
     padding: 0,
     margin: 0,
