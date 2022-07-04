@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `DinoBeachDev`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `dinbeach.dev`,
+    siteUrl: `https://dinobeach.dev`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/favicon.svg"
     }
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
@@ -22,5 +22,14 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  }, 
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `blog`,
+      path: `${__dirname}/blog`,
+    }, 
+    __key: "blog"
+  }
+  ]
 };
