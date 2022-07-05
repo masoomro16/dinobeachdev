@@ -26,7 +26,7 @@ function Header(props) {
                 </div>
                
 
-                <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10`}>
+                <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static`}>
                     <AiOutlineCloseCircle className='md:hidden' onClick={()=>{setToggleMenu(false)}} />
                     <Link to="/" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Home</Link>
                     <Link to="/blog" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Services</Link>
