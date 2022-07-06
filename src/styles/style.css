@@ -25,3 +25,9 @@ body {
 .no-move:hover{
     margin-bottom: -4px;
 }
+
+.gradient-text{
+    background: -webkit-linear-gradient(#EDA9B2, #23B4D9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
