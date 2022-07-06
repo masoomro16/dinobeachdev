@@ -8,7 +8,7 @@ function Header(props) {
     const [toggleMenu, setToggleMenu] = useState(false);
     
     return (
-        <header className='flex justify-between items-center'>
+        <header className='flex justify-between items-center md:max-w-7xl max-w-md mx-auto'>
            <StaticImage
             alt="DinoBeach Logo"
             src="../images/title-logo.svg"
