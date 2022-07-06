@@ -12,7 +12,6 @@ const pageStyles = {
     borderTopWidth: 15,
     borderTopStyle: "solid",
     borderImage: "linear-gradient(to right, #EDA9B2, #23B4D9) 1",
-    height: "100vh"
 }
 
 function Layout(props) {
