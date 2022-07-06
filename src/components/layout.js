@@ -4,7 +4,7 @@ import "../styles/style.css"
 import Header from './header';
 // styles
 const pageStyles = {
-    // color: "#5D6567",
+    color: "#5D6567",
     backgroundColor: "#FAF6EE",
     padding: 0,
     margin: 0,
@@ -12,7 +12,6 @@ const pageStyles = {
     borderTopWidth: 15,
     borderTopStyle: "solid",
     borderImage: "linear-gradient(to right, #EDA9B2, #23B4D9) 1",
-    height: "100vh"
 }
 
 function Layout(props) {
@@ -31,7 +30,6 @@ function Layout(props) {
     return (
         <div style={pageStyles}>
             <title>{pageTitle}</title>
-            <h1>{ data.site.siteMetadata.title }</h1>
             <Header/>
             <main>
                 {children}
