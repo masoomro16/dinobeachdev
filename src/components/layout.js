@@ -2,6 +2,8 @@ import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby'
 import "../styles/style.css"
 import Header from './header';
+import { StaticImage } from 'gatsby-plugin-image';
+
 // styles
 const pageStyles = {
     color: "#5D6567",
@@ -34,8 +36,10 @@ function Layout(props) {
             <main>
                 {children}
             </main>
+            
+          
+
             <footer style={{
-                height: "60px",
                 backgroundImage: "linear-gradient(to right, #EDA9B2, #23B4D9)",
                 marginBottom: 0
             }}>
