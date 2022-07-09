@@ -8,11 +8,11 @@ function Header(props) {
     const [toggleMenu, setToggleMenu] = useState(false);
     
     return (
-        <header className='flex justify-between items-center md:max-w-7xl max-w-md mx-auto'>
+        <header className='flex justify-start md:justify-between items-center md:max-w-7xl max-w-md mx-auto '>
            <StaticImage
             alt="DinoBeach Logo"
             src="../images/title-logo.svg"
-            className='scale-50'    
+            className='scale-50 relative md:static right-[15%] md:right-auto'    
             />
             
             
@@ -26,7 +26,7 @@ function Header(props) {
                 </div>
                
 
-                <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static`}>
+                <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static `}>
                     <AiOutlineCloseCircle className='md:hidden' onClick={()=>{setToggleMenu(false)}} />
                     <Link to="/" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Home</Link>
                     <Link to="/blog" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Services</Link>
