@@ -30,15 +30,12 @@ function Layout(props) {
     `)
 
     return (
-        <div style={pageStyles}>
+        <div style={pageStyles} className='relative'>
             <title>{pageTitle}</title>
             <Header/>
             <main>
                 {children}
             </main>
-            
-          
-
             <footer style={{
                 backgroundImage: "linear-gradient(to right, #EDA9B2, #23B4D9)",
                 marginBottom: 0
