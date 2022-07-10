@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import useWindowSize from '../hooks/useWindowSize';
 import { Link } from "gatsby";
 import { StaticImage } from 'gatsby-plugin-image';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -8,9 +9,19 @@ import wavesMenu from "../images/waves.svg"
 
 function Header(props) {
     const [toggleMenu, setToggleMenu] = useState(false);
+    const size = useWindowSize()
+
+    // if the user does not close out the menu
+    // but tries to change screen width manually
+    // might not be necessary in production??
+    useEffect(()=> { 
+        if(size.width > 768) {
+            setToggleMenu(false)
+        }
+    })
     
     return (
-        <header className='flex justify-start justify-between items-center md:max-w-7xl max-w-md mx-auto '>
+        <header className='flex justify-start justify-between  items-center md:max-w-7xl max-w-md mx-auto '>
             <img 
                 src={logo}
                 alt="DinoBeach Logo"
@@ -32,14 +43,15 @@ function Header(props) {
                     />
                 </div>
                 {/* full page menu */}
-                <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static `}>
-                    <AiOutlineCloseCircle className='md:hidden' onClick={()=>{setToggleMenu(false)}} />
-                    <Link to="/" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Home</Link>
-                    <Link to="/blog" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Services</Link>
-                    <Link to="/blog" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Blog</Link>
-                    <Link to="/blog" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Resources</Link>
-                    <Link to="/about" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>About</Link>
-                    <Link to="/blog" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Contact</Link>  
+                {/* <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static `}> */}
+                <div className={`${toggleMenu ? 'block no-scroll h-screen gradient': 'hidden'} m:w-1/3  w-full md:block md:bg-transparent flex flex-col justify-center z-10 absolute top-[-15px] left-0 md:static `}>
+                    <AiOutlineCloseCircle size={70} color={"white"} onClick={()=>{setToggleMenu(false)}} className={ `md:hidden ${toggleMenu && 'absolute top-0 right-0 padding-20' }`} />
+                    <Link to="/" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Home</Link>
+                    <Link to="/blog" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Services</Link>
+                    <Link to="/blog" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Blog</Link>
+                    <Link to="/blog" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Resources</Link>
+                    <Link to="/about" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>About</Link>
+                    <Link to="/blog" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Contact</Link>  
                 </div>
             </nav> 
         </header>
