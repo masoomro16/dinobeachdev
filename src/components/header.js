@@ -14,7 +14,7 @@ function Header(props) {
             <img 
                 src={logo}
                 alt="DinoBeach Logo"
-                className='lg:w-40 w-32 relative md:static md:right-auto'
+                className='md:w-2/12 w-4/12 relative md:static md:right-auto'
             />
             
            {/* <StaticImage
@@ -25,13 +25,13 @@ function Header(props) {
             
             <nav className='justify-around'>
                 <div onClick={()=>setToggleMenu(true)}>
-                <img 
-                    src={wavesMenu}
-                    alt="DinoBeach Logo"
-                    className='md:hidden w-16'
-                />
-                
+                    <img 
+                        src={wavesMenu}
+                        alt="DinoBeach Logo"
+                        className='md:hidden w-16'
+                    />
                 </div>
+                {/* full page menu */}
                 <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static `}>
                     <AiOutlineCloseCircle className='md:hidden' onClick={()=>{setToggleMenu(false)}} />
                     <Link to="/" className='title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move'>Home</Link>
