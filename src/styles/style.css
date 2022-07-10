@@ -34,7 +34,8 @@ body {
 }
 
 .gradient{ 
-    background:linear-gradient(90deg, #EDA9B2, #23B4D9 );
+    background:#FFDE9D;
+    /* background:linear-gradient(90deg, #EDA9B2, #23B4D9 ); */
 }
 
 .no-scroll {

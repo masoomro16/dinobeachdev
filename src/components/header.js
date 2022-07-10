@@ -21,7 +21,7 @@ function Header(props) {
     })
     
     return (
-        <header className='flex justify-start justify-between  items-center md:max-w-7xl max-w-md mx-auto '>
+        <header className='p-5 flex justify-start justify-between  items-center md:max-w-7xl max-w-md mx-auto '>
             <img 
                 src={logo}
                 alt="DinoBeach Logo"
