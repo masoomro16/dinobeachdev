@@ -44,7 +44,7 @@ function Header(props) {
                 </div>
                 {/* full page menu */}
                 {/* <div className={`${toggleMenu ? 'block': 'hidden'} w-1/3 md:block flex flex-col z-10 absolute md:static `}> */}
-                <div className={`${toggleMenu ? 'block no-scroll h-screen gradient': 'hidden'} m:w-1/3  w-full md:block md:bg-transparent flex flex-col justify-center z-10 absolute top-[-15px] left-0 md:static `}>
+                <div className={`${toggleMenu ? 'block no-scroll h-screen gradient': 'hidden'} m:w-1/3  w-full md:block md:bg-transparent flex flex-col justify-center z-40 absolute top-[-15px] left-0 md:static `}>
                     <AiOutlineCloseCircle size={70} color={"white"} onClick={()=>{setToggleMenu(false)}} className={ `md:hidden ${toggleMenu && 'absolute top-0 right-0 padding-20' }`} />
                     <Link to="/" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Home</Link>
                     <Link to="/blog" className={`title-text mx-6 hover:border-[#4fb3fa] hover:border-b-4 no-move ${toggleMenu ? 'text-7xl text-white' : ''}`}>Services</Link>
