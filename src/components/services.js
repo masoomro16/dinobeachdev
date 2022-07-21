@@ -1,4 +1,5 @@
 import React from 'react'
+import Footprint from './footprint';
 
 function Services() {
   return (
