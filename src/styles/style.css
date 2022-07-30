@@ -16,6 +16,9 @@ html {
     box-sizing: border-box;
 }
 
+.blue-text { 
+  color: #3C97BE;
+}
 
 .title-text {
     font-family: 'Aclonica', sans-serif;;
