@@ -4,8 +4,9 @@ function Services() {
   return (
     <div className='h-screen mx-5 md:mx-28 mt-5'>
         <div className='max-w-[70%] my-3'>
-           <h3 className='context-text text-base md:text-xl'>services</h3>
+            <h3 className='context-text text-base md:text-xl'>services</h3>
             <h2 className='text-2xl md:text-5xl title-text gradient-text'>we like to create pretty websites that work fast</h2> 
+            <p>Not quite sure? Take our quiz to find out your dino fit</p>
         </div>
 
         <div className='flex flex-wrap'>
