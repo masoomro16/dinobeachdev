@@ -48,6 +48,10 @@ html {
     color: linear-gradient(90deg, #EDA9B2, #23B4D9 ) !important;
 }
 
+.gradient-bg{ 
+  background: -webkit-linear-gradient(#EDA9B2, #23B4D9);
+}
+
 .no-scroll {
     height: 100vh;
     overflow: hidden;
