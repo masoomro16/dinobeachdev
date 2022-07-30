@@ -16,6 +16,9 @@ html {
     box-sizing: border-box;
 }
 
+.blue-text { 
+  color: #3C97BE;
+}
 
 .title-text {
     font-family: 'Aclonica', sans-serif;;
@@ -43,6 +46,10 @@ html {
 
 .gradient-background {
   background:linear-gradient(90deg, #EDA9B2, #23B4D9 );
+}
+
+.gradient-bg{ 
+  background: -webkit-linear-gradient(#EDA9B2, #23B4D9);
 }
 
 .no-scroll {
