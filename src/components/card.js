@@ -1,8 +1,10 @@
 import React from 'react'
 
-function card() {
+function card(props) {
   return (
-    <div className='border-gradient'>Card</div>
+    <div className='border-gradient'>
+        
+    </div>
   )
 }
 
