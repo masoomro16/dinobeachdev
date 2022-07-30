@@ -41,8 +41,8 @@ html {
     /* background:linear-gradient(90deg, #EDA9B2, #23B4D9 ); */
 }
 
-.gradient-border {
-    color: linear-gradient(90deg, #EDA9B2, #23B4D9 ) !important;
+.gradient-background {
+  background:linear-gradient(90deg, #EDA9B2, #23B4D9 );
 }
 
 .no-scroll {
