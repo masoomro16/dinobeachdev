@@ -2,6 +2,8 @@ import React from 'react';
 import BlogCard from './blogCard';
 import waves from '../images/waves.svg';
 
+// Will need to change to map the first 3 in blog articles once we have data
+
 function BlogSection() {
   return (
     <div className='mb-28 md:mx-28 '>
