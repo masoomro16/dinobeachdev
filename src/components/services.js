@@ -30,8 +30,6 @@ const serviceData = [
 
 function Services() {
 
-    const serviceList = serviceData.map((item)=><ServiceCard {...item}/>)
-
     return (
         <div className='md:min-h-screen mx-5 md:mx-28 mt-5 relative z-10'>
             <div className='max-w-[70%] md:my-3'>
@@ -50,41 +48,42 @@ function Services() {
                 <ServiceCard {...serviceData[3]}/>
             </div>
 
-            {/* <div className='flex flex-wrap'>
-                
-                <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
-                    <h2 className='text-xl title-text gradient-text'>Day at DinoBeach</h2>
-                    <p className="text-sm content-text mt-3">Single Page Application/Landing Page</p>
-                    <p className="text-sm content-text mt-3 ">Social Media Packer</p>
-                    <p className="text-sm content-text mt-3">Contact Forms & Interactions</p>
-                    <p className="text-sm content-text mt-3">SEO Strategy</p>
-                    <p className="text-sm content-text mt-3">Perfect For: Restaurants</p>  
-                </div>
-
-                <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
-                    <h2 className='text-xl title-text gradient-text'>Weekend Getaway</h2>
-                    <p className="text-sm content-text mt-3">Multi-page Brochure Website</p>
-                    <p className="text-sm content-text mt-3">Perfect for: Podcast Site</p>  
-                </div>
-
-                <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
-                    <h2 className='text-xl title-text gradient-text'>Dinofluencer</h2>
-                    <p className="text-sm content-text mt-3">Blogging Platform for Fashion, Food, or anything you want!</p>  
-                </div>
-
-                <div className='shrink flex-grow-1 basis-full md:basis-4/12 mt-6 md:max-w-none md:min-w-0'>
-                    <h2 className='text-xl title-text gradient-text'>Dinoland</h2>
-                    <p className="text-sm content-text mt-3">eCommerce Store with Shopify</p>  
-                </div>
-
-                <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
-                    <h2 className='text-xl title-text gradient-text'>Build a Beach</h2>
-                    <p className="text-sm content-text mt-3">eCommerce Store with Shopfiy</p>  
-                </div> 
-                
-            </div>*/}
         </div>
     )
 }
 
 export default Services;
+
+/* <div className='flex flex-wrap'>
+    
+    <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
+        <h2 className='text-xl title-text gradient-text'>Day at DinoBeach</h2>
+        <p className="text-sm content-text mt-3">Single Page Application/Landing Page</p>
+        <p className="text-sm content-text mt-3 ">Social Media Packer</p>
+        <p className="text-sm content-text mt-3">Contact Forms & Interactions</p>
+        <p className="text-sm content-text mt-3">SEO Strategy</p>
+        <p className="text-sm content-text mt-3">Perfect For: Restaurants</p>  
+    </div>
+
+    <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
+        <h2 className='text-xl title-text gradient-text'>Weekend Getaway</h2>
+        <p className="text-sm content-text mt-3">Multi-page Brochure Website</p>
+        <p className="text-sm content-text mt-3">Perfect for: Podcast Site</p>  
+    </div>
+
+    <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
+        <h2 className='text-xl title-text gradient-text'>Dinofluencer</h2>
+        <p className="text-sm content-text mt-3">Blogging Platform for Fashion, Food, or anything you want!</p>  
+    </div>
+
+    <div className='shrink flex-grow-1 basis-full md:basis-4/12 mt-6 md:max-w-none md:min-w-0'>
+        <h2 className='text-xl title-text gradient-text'>Dinoland</h2>
+        <p className="text-sm content-text mt-3">eCommerce Store with Shopify</p>  
+    </div>
+
+    <div className='shrink flex-grow-1 basis-full md:basis-4/12 my-6 md:max-w-none md:min-w-0'>
+        <h2 className='text-xl title-text gradient-text'>Build a Beach</h2>
+        <p className="text-sm content-text mt-3">eCommerce Store with Shopfiy</p>  
+    </div> 
+    
+</div>*/
