@@ -2,7 +2,7 @@ import React from 'react';
 
 function ServiceCard(props) {
     return (
-        <div className="bg-[#FADCD2] w-72 md:w-96 h-80 flex flex-col justify-center items-center rounded-xl px-8 md:px-14 py-8 mx-8  mt-8 relative">
+        <div className="bg-[#FADCD2] w-72 md:w-96 h-80 flex flex-col justify-center items-center rounded-xl px-8 md:px-14 md:py-8 py-16 mx-8 mt-8 mb-10 relative">
             <div className="w-24 h-24 rounded-full gradient-bg absolute -top-12 md:-top-6  md:-left-10 flex justify-center items-center ">
                 <h4 className='text-cream text-center md:-rotate-12'>{props.packageName}</h4>
             </div>
