@@ -4,8 +4,8 @@ import ServiceCard from './serviceCard';
 const serviceData = [
     {
         packageName: "Day at Dino Beach",
-        title: "Single-Page Landing Site",
-        description: "Some text describing it goes here", 
+        title: "Single landing page",
+        description: "Everything your customers need to know on a single page, straight to the point", 
         useCase:"Perfect for: product ads, restaurants "
     },
     {
@@ -13,6 +13,18 @@ const serviceData = [
         title: "Multi-page Brochure Site",
         description: "Some text describing it goes here", 
         useCase:"Perfect for: small businesses"
+    },
+    {
+        packageName: "Dinofluencer",
+        title: "Blogging Platform",
+        description: "Some text describing it goes here", 
+        useCase:"Perfect for: fashion, food, lifestyle blogs, podcast site"
+    },
+    {
+        packageName: "Dinoland",
+        title: "E-Commerce Site",
+        description: "Some text describing it goes here", 
+        useCase:"Perfect for: small and large online stores"
     }
 ]
 
@@ -21,17 +33,21 @@ function Services() {
     const serviceList = serviceData.map((item)=><ServiceCard {...item}/>)
 
     return (
-        <div className='md:h-screen mx-5 md:mx-28 mt-5 relative z-10'>
+        <div className='md:min-h-screen mx-5 md:mx-28 mt-5 relative z-10'>
             <div className='max-w-[70%] md:my-3'>
                 <h3 className='context-text text-base md:text-xl'>services</h3>
                 <h2 className='text-2xl md:text-5xl title-text blue-text'>we like to create <span className="gradient-text">pretty</span> websites that work <span className="gradient-text">fast</span></h2> 
-                <p>Not quite sure? Take our quiz to find out your dino fit</p>
+                <p>Not quite sure what you need? Take our quiz to find your perfect fit</p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:my-20 my-10">
-                {serviceList}
-                {/* <ServiceCard/>
-                <ServiceCard/> */}
+            <div className="flex flex-wrap flex-col justify-center md:flex-row md:my-20 my-10">
+                <ServiceCard {...serviceData[0]}/>
+                <ServiceCard {...serviceData[1]}/>
+                <div className="flex flex-col justify-center w-72 md:w-80">
+                    <h3 className="title-text text-3xl text-blue">Need something more custom? Tell us more</h3>
+                </div>
+                <ServiceCard {...serviceData[2]}/>
+                <ServiceCard {...serviceData[3]}/>
             </div>
 
             {/* <div className='flex flex-wrap'>
