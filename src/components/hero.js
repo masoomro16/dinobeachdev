@@ -14,19 +14,19 @@ function Hero() {
         {/* <img src={stamp} /> */}
         <div>
           <StaticImage
-                  alt="beach"
-                  src="../images/vintage-beach-short.jpg"
-                  // className='scale-[.80] rounded-t-[45%] hidden md:block'  
-                  className='h-2/5 scale-[.90] rounded-t-[45%] hidden md:block'  
+            alt="beach"
+            src="../images/vintage-beach-short.jpg"
+            // className='scale-[.80] rounded-t-[45%] hidden md:block'  
+            className='h-2/5 scale-[.90] rounded-t-[45%] hidden md:block'  
           />
         </div>
     </div>
   )
 }
 
+export default Hero;
  
 /*
 old scale property
 scale-[.5]
 */
-export default Hero;
