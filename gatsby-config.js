@@ -1,3 +1,14 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+const strapiConfig = {
+  apiURL: process.env.STRAPI_API_URL,
+  accessToken: process.env.STRAPI_TOKEN,
+  collectionTypes: ['post'],
+  singleTypes: [],
+};
+
 module.exports = {
   siteMetadata: {
     title: `dinbeach.dev`,
@@ -9,7 +20,10 @@ module.exports = {
       "icon": "src/images/favicon.svg"
     }
   },
-  
+  {
+    resolve: `gatsby-source-strapi`,
+    options: strapiConfig,
+  },
    "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -17,12 +31,6 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }, {
-    resolve: `gatsby-source-ghost`,
-    options: {
-      apiUrl: `https://gatsby.ghost.io`,
-      contentApiKey: `9cc5c67c358edfdd81455149d0`,
-    },
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
