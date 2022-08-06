@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 import {graphql} from "gatsby"
 
 import BlogCard from '../../components/blogCard';
-import FirstBlogCard from '../../components/firstBlogCard';
+import FeaturedBlogCard from '../../components/featuredBlogCard';
 import SecondBlogCard from '../../components/secondBlogCard';
 
 
@@ -11,16 +11,16 @@ function Blog(props) {
     const {data} = props
     return (
         <Layout pageTitle="Blog">
-            <div className='mx-auto w-full'>
+            <div className='w-full mx-auto md:max-w-7xl'>
                 
                 {/* First Row */}
-                <div className='flex justify-between'>
-                    <FirstBlogCard />
-                    <SecondBlogCard /> 
+                <div className='flex flex-col content-between md:justify-between md:flex-row'>
+                    <FeaturedBlogCard />
+                    <FeaturedBlogCard />
                 </div>
 
                 {/* Second Row */}
-                <div className='flex justify-around'>
+                <div className='flex justify-between'>
                     <BlogCard />
                     <BlogCard />
                     <BlogCard />
