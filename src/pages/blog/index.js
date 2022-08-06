@@ -4,7 +4,6 @@ import {graphql} from "gatsby"
 
 import BlogCard from '../../components/blogCard';
 import FeaturedBlogCard from '../../components/featuredBlogCard';
-import SecondBlogCard from '../../components/secondBlogCard';
 
 
 function Blog(props) {
