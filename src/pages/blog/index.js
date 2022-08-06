@@ -13,13 +13,13 @@ function Blog(props) {
             <div className='w-full mx-auto md:max-w-7xl'>
                 
                 {/* First Row */}
-                <div className='flex flex-col content-between md:justify-between md:flex-row my-10'>
+                <div className='flex flex-col md:justify-between md:flex-row my-10'>
                     <FeaturedBlogCard />
                     <FeaturedBlogCard />
                 </div>
 
                 {/* Second Row */}
-                <div className='flex justify-between my-10'>
+                <div className='flex flex-col md:flex-row md:justify-between my-10'>
                     <BlogCard />
                     <BlogCard />
                     <BlogCard />
