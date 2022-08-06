@@ -1,36 +1,60 @@
 const path = require(`path`)
-exports.createPages = async ({ graphql, actions, reporter }) => {
-  const postTemplate = path.resolve(`./src/templates/post.js`)
-  // Query Ghost data
-  const result = await graphql(`
-    {
-      allGhostPost(sort: { order: ASC, fields: published_at }) {
-        edges {
-          node {
-            slug
+
+exports.createPages = async ({ graphql, actions }) => {
+  console.log("createPages called")
+  const { createPage } = actions;
+  const result = await graphql(
+    `
+    query{
+    allStrapiPost {
+      edges {
+        node {
+          publishedAt
+          title
+          updatedAt
+          description
+          author {
+            firstname
+            lastname
           }
+          body {
+            data {
+              body
+            }
+          }
+          image {
+            children {
+              ... on ImageSharp {
+                id
+              }
+            }
+          }
+          id
         }
       }
     }
-  `)
-  // Handle errors
+  }
+    `
+  );
+
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    throw result.errors;
   }
-  if (!result.data.allGhostPost) {
-    return
-  }
-  // Create pages for each Ghost post
-  const items = result.data.allGhostPost.edges
-  items.forEach(({ node }) => {
-    node.url = `/${node.slug}/`
-    actions.createPage({
-      path: node.url,
-      component: postTemplate,
+
+  // Create blog articles pages.
+  const posts = result.data.allStrapiPost.edges;
+
+  console.log("GATSBY NODE.JS FILE", posts)
+
+  const PostTemplate = require.resolve('./src/templates/post.js');
+
+  posts.forEach((category, index) => {
+    createPage({
+      path: `/blog/${category.node.id}`,
+      component: PostTemplate,
       context: {
-        slug: node.slug,
+        id: category.node.id,
       },
-    })
-  })
-}
+    });
+  });
+};
