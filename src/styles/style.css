@@ -67,6 +67,14 @@ html {
   color: #FAF6EE;
 }
 
+.card{
+  background: #FAF6EE;
+}
+.card:hover{
+  background:linear-gradient(90deg, #EDA9B2, #23B4D9 );
+  color: #FAF6EE;
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
     from {
       -webkit-transform: rotate(0deg);
