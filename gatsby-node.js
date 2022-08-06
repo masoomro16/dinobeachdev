@@ -9,26 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
     allStrapiPost {
       edges {
         node {
-          publishedAt
           title
-          updatedAt
-          description
-          author {
-            firstname
-            lastname
-          }
-          body {
-            data {
-              body
-            }
-          }
-          image {
-            children {
-              ... on ImageSharp {
-                id
-              }
-            }
-          }
           id
         }
       }
