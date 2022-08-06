@@ -16,7 +16,7 @@ function BlogSection() {
        
        <div className='flex flex-col md:flex-row md:justify-between space-x-4 md:space-x-8'>
                 <BlogCard />
-                <BlogCard custom='mt-28'/>
+                <BlogCard custom="mt-28"/>
                 <BlogCard />
         </div>
       
