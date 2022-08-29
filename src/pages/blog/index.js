@@ -4,6 +4,7 @@ import {graphql, useStaticQuery} from "gatsby"
 
 import BlogCard from '../../components/blogCard';
 import FeaturedBlogCard from '../../components/featuredBlogCard';
+import { list } from 'postcss';
 
 function Blog(props) {
     const {data} = props
@@ -51,23 +52,20 @@ function Blog(props) {
 
     return (
         <Layout pageTitle="Blog">
-            <div className='w-full mx-auto md:max-w-7xl'>
+          <div className='w-full mx-auto md:max-w-7xl'>
 
-                {listResults}
-                
-                {/* First Row */}
-                <div className='flex flex-col md:justify-between md:flex-row my-10'>
-                    <FeaturedBlogCard />
-                    <FeaturedBlogCard />
-                </div>
+           {/* First Row */}
+           <div className='flex flex-col md:justify-between md:flex-row my-10'>
+              {listResults[0]}
+              {listResults[1]}
+            </div>
 
                 {/* Second Row */}
                 <div className='flex flex-col md:flex-row md:justify-between my-10'>
-                    <BlogCard />
-                    <BlogCard />
-                    <BlogCard />
+                  {listResults.slice(2)}
                 </div>
-            </div>
+
+                </div>
            
             
            
@@ -75,4 +73,10 @@ function Blog(props) {
     );
 }
 
-export default Blog
+export default Blog;
+
+// JavaScript Object to contain the needed CSS including a variable to control the number of instances of the BlogCard
+// Need to use this to circle through the Grid
+//Grid template area: 
+  //Header1 (Index0), Header 2(index1)
+  //regular regular regular (repeat x number of times (??) )
