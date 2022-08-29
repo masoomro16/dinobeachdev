@@ -54,20 +54,18 @@ function Blog(props) {
         <Layout pageTitle="Blog">
           <div className='w-full mx-auto md:max-w-7xl'>
 
-           {/* First Row */}
-           <div className='flex flex-col md:justify-between md:flex-row my-10'>
-              {listResults[0]}
-              {listResults[1]}
-            </div>
+          {/* First Row */}
+          <div className='flex flex-col md:justify-between md:flex-row my-10'>
+            {listResults[0]}
+            {listResults[1]}
+          </div>
 
-                {/* Second Row */}
-                <div className='flex flex-col md:flex-row md:justify-between my-10'>
-                  {listResults.slice(2)}
-                </div>
+          {/* Second Row */}
+          <div className='flex flex-col md:flex-row md:justify-between my-10'>
+            {listResults.slice(2)}
+          </div>
 
-                </div>
-           
-            
+          </div>
            
         </Layout>
     );
