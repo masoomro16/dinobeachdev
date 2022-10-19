@@ -47,7 +47,7 @@ function Blog(props) {
     if(idx===0 || idx===1) 
         return <FeaturedBlogCard item={item.node}/>
     else 
-        return <BlogCard item={item.node}/>
+        return <BlogCard item={item.node} />
   })
 
     return (
@@ -61,7 +61,7 @@ function Blog(props) {
           </div>
 
           {/* Second Row */}
-          <div className='flex flex-col md:flex-row md:justify-between my-10'>
+          <div className='flex flex-col flex-wrap md:flex-row md:justify-between my-10 w-full'>
             {listResults.slice(2)}
           </div>
 
