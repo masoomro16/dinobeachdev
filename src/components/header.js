@@ -47,7 +47,7 @@ function Header(props) {
                 <div className={`${toggleMenu ? 'block no-scroll h-screen gradient': 'hidden'} m:w-1/3  w-full md:block md:bg-transparent flex flex-col justify-center z-40 absolute top-[-15px] left-0 md:static `}>
                     <AiOutlineCloseCircle size={70} color={"white"} onClick={()=>{setToggleMenu(false)}} className={ `md:hidden ${toggleMenu && 'absolute top-0 right-0 padding-20' }`} />
                     <Link to="/" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Home</Link>
-                    <Link to="/blog" className={`title-text md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Services</Link>
+                    <Link to="/services" className={`title-text md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Services</Link>
                     <Link to="/blog" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Blog</Link>
                     <Link to="/blog" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Resources</Link>
                     <Link to="/about" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>About</Link>
