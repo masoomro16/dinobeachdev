@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -30,26 +30,25 @@ const placeHolderData = [
   },
 ]
  
-const services = (props, dataList) => {
+const services = (props) => {
 
   return (
     <Layout>
-      {/* set on hover:text-5xl */}
 
       <div className='h-[calc(100vh_-_150px)] flex mt-14'>
         <div>
-          <h2 className='text-4xl mx-16 mb-12 text-blue font-bold title-text'>Day at Dino Beach</h2>
-          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text'>Place Holder Title</h2>
-          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text'>Place Holder Title</h2>
-          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text'>Place Holder Title</h2>
-          <div className='text-4xl mx-16 mt-12 text-blue font-bold title-text'>Place Holder Title</div>
+          <h2 className='text-4xl mx-16 mb-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Day at Dino Beach</h2>
+          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</h2>
+          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</h2>
+          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</h2>
+          <div className='text-4xl mx-16 mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</div>
         </div>
         
         
-        <div className='text-2xl flex-col content-text'>
-            <div className=''>Place holder details 1</div>
-            <div>Place holder details 2</div>
-            <div>Place holder details 3</div>
+        <div className='flex-col content-text text-2xl'>
+            <div className='mb-12'>Place holder details 1</div>
+            <div className='my-12'>Place holder details 2</div>
+            <div className='mt-12'>Place holder details 3</div>
         </div>
         
         <div>
