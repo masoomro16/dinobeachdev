@@ -2,7 +2,8 @@ export const serviceData = [
     {
       id:1,
       title: "Weekend Getaway",
-      subArray: [
+      price: $200,
+      details: [
         "Single Page Application / Landing Page",
         "Contact Forms & Interactions",
         "Social media packet",
@@ -13,7 +14,8 @@ export const serviceData = [
     {
       id:2,
       title: "Day at Dino Beach",
-      subArray: [
+      price: $200,
+      details: [
         "Single Page Application / Landing Page",
         "Contact Forms & Interactions",
         "Social media packet",
@@ -24,7 +26,8 @@ export const serviceData = [
     {
       id:3,
       title:"Dinfluencer",
-      subArray: [
+      price: $200,
+      details: [
         "Single Page Application / Landing Page",
         "Contact Forms & Interactions",
         "Social media packet",
@@ -35,7 +38,8 @@ export const serviceData = [
     {
       id:4,
       title: "Dinoland",
-      subArray: [
+      price: $200,
+      details: [
         "Single Page Application / Landing Page",
         "Contact Forms & Interactions",
         "Social media packet",
@@ -46,7 +50,8 @@ export const serviceData = [
     {
       id:5,
       title:"Build a Beach",
-      subArray: [
+      price: $200,
+      details: [
         "Single Page Application / Landing Page",
         "Contact Forms & Interactions",
         "Social media packet",
