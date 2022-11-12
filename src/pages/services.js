@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Layout from '../components/layout'
+import ServiceTitle from '../components/ServiceTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const placeHolderData = [
@@ -35,13 +36,13 @@ const services = (props) => {
   return (
     <Layout>
 
-      <div className='h-[calc(100vh_-_150px)] flex mt-14'>
+      <div className='h-[calc(100vh_-_150px)] flex'>
         <div>
-          <h2 className='text-4xl mx-16 mb-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Day at Dino Beach</h2>
-          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</h2>
-          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</h2>
-          <h2 className='text-4xl mx-16 my-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</h2>
-          <div className='text-4xl mx-16 mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink'>Place Holder Title</div>
+          <ServiceTitle />
+          <ServiceTitle />
+          <ServiceTitle />
+          <ServiceTitle />
+          <ServiceTitle />
         </div>
         
         
