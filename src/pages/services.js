@@ -25,15 +25,21 @@ const Services = (props) => {
     );
   }
 
+  const serviceDetails = serviceData.find(({title})=> title === selectedService);
+
+  const newService = (serviceDetail) => <p className='mt-12 content-text text-xl text-bold'>{serviceDetail}</p>
+  console.log(serviceDetails);
+
+
   return (
     <Layout>
 
       <div className='h-[calc(100vh_-_150px)] flex'>
 
-        <div className='flex flex-col'>{serviceData.map(newServiceTitle)}</div>
+        <div className='flex flex-col min-w-[500px] ml-16'>{serviceData.map(newServiceTitle)}</div>
         
-        <div className='flex-col'>
-        
+        <div className='flex flex-col'>
+          {serviceDetails.details.map(newService)}
         </div>
 
 
@@ -44,8 +50,3 @@ const Services = (props) => {
 }
 
 export default Services
-
-// Services CSS
-{/* <div className='mb-12'>Place holder details 1</div>
-<div className='my-12'>Place holder details 2</div>
-<div className='mt-12'>Place holder details 3</div> */}
