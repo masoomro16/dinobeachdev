@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
 
-const ServiceTitle = () => {
-  const [Focus, setFocus] = useState(true);
+const ServiceTitle = ({service, selectedService, changeSelectedService}) => {
+  const inactiveTitle = "text-4xl mx-16 mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
+  const activeTitle = " mx-16 mt-12 font-bold title-text text-5xl text-pink"
+  console.log(service.title, selectedService);
 
-  const focusedText = 'text-5xl text-pink';
 
   return (
-    <div>
-        <h2 className={`text-4xl mx-16 my-12 text-blue font-bold title-text hover:${focusedText} ${Focus && focusedText}`} onClick={setFocus}
-        >Day at Dino Beach</h2>
-    </div>
+   
+        <h2 className={ selectedService===service.title ? activeTitle : inactiveTitle} onClick={()=>changeSelectedService(service.title)}
+        >{service.title}</h2>
   )
 }
 

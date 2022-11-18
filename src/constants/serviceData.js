@@ -2,9 +2,9 @@ export const serviceData = [
     {
       id:1,
       title: "Weekend Getaway",
-      price: $200,
+      price: 200,
       details: [
-        "Single Page Application / Landing Page",
+        "Details 1",
         "Contact Forms & Interactions",
         "Social media packet",
         "SEO Strategy",
@@ -14,9 +14,9 @@ export const serviceData = [
     {
       id:2,
       title: "Day at Dino Beach",
-      price: $200,
+      price: 200,
       details: [
-        "Single Page Application / Landing Page",
+        "Details 2",
         "Contact Forms & Interactions",
         "Social media packet",
         "SEO Strategy",
@@ -26,9 +26,9 @@ export const serviceData = [
     {
       id:3,
       title:"Dinfluencer",
-      price: $200,
+      price: 200,
       details: [
-        "Single Page Application / Landing Page",
+        "Details 3",
         "Contact Forms & Interactions",
         "Social media packet",
         "SEO Strategy",
@@ -38,9 +38,9 @@ export const serviceData = [
     {
       id:4,
       title: "Dinoland",
-      price: $200,
+      price: 200,
       details: [
-        "Single Page Application / Landing Page",
+        "Details 4",
         "Contact Forms & Interactions",
         "Social media packet",
         "SEO Strategy",
@@ -50,9 +50,9 @@ export const serviceData = [
     {
       id:5,
       title:"Build a Beach",
-      price: $200,
+      price: 200,
       details: [
-        "Single Page Application / Landing Page",
+        "Details 1",
         "Contact Forms & Interactions",
         "Social media packet",
         "SEO Strategy",
