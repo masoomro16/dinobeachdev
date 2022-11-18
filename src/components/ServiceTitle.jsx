@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 const ServiceTitle = ({service, selectedService, changeSelectedService}) => {
-  const inactiveTitle = "text-4xl mx-16 mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
-  const activeTitle = " mx-16 mt-12 font-bold title-text text-5xl text-pink"
+  const inactiveTitle = "text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
+  const activeTitle = "mt-12 font-bold title-text text-5xl text-pink"
   console.log(service.title, selectedService);
 
 
