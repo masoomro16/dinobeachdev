@@ -67,6 +67,16 @@ html {
   color: #FAF6EE;
 }
 
+.fill-arrow{
+  color: #FFDE9D;
+  background-color: #5D6567;
+}
+
+.arrow2{
+  background-color: #FFDE9D;
+  color: #5D6567;
+}
+
 .card{
   background: #FAF6EE;
 }

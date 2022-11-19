@@ -3,6 +3,9 @@ import Layout from '../components/layout'
 import ServiceTitle from '../components/ServiceTitle';
 import { serviceData } from '../constants/serviceData';
 import { StaticImage } from 'gatsby-plugin-image';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { IoArrowForwardCircleSharp } from 'react-icons/io5';
+import { FaArrowRight } from 'react-icons/fa';
 
 
 
@@ -38,8 +41,31 @@ const Services = (props) => {
 
         <div className='flex flex-col min-w-[500px] ml-16'>{serviceData.map(newServiceTitle)}</div>
         
-        <div className='flex flex-col'>
+        <div className='flex flex-col max-w-l'>
           {serviceDetails.details.map(newService)}
+        </div>
+
+        <div>
+
+        <StaticImage
+            alt="beach"
+            src="../images/vintage-beach-short.jpg"
+            className='h-4/5 scale-[.90] rounded-t-[45%] hidden w-96 md:block'  
+          />
+          <StaticImage src="../images/stamp_p.svg" className='absolute bottom-[20%] left-[80%] z-10 rotating'/>
+          
+          <div className='ml-4'>
+            <div className='content-text text-xl text-left mb-5'>
+              Pricing Starts At
+            </div> 
+
+            <div className='title-text text-pink text-4xl text-center flex'>
+            {serviceDetails.price} USD.
+            <FaArrowRight className='arrow2 rounded-full h-20 w-20 p-2 absolute left-[80%] bottom-[5%] hover:h-24 hover:w-24' />
+            </div>
+          </div>
+      
+        
         </div>
 
 
