@@ -14,7 +14,7 @@ export const serviceData = [
     {
       id:2,
       title: "Day at Dino Beach",
-      price: 200,
+      price: 300,
       details: [
         "Details 2",
         "Contact Forms & Interactions",
@@ -26,7 +26,7 @@ export const serviceData = [
     {
       id:3,
       title:"Dinfluencer",
-      price: 200,
+      price: 400,
       details: [
         "Details 3",
         "Contact Forms & Interactions",
@@ -38,7 +38,7 @@ export const serviceData = [
     {
       id:4,
       title: "Dinoland",
-      price: 200,
+      price: 500,
       details: [
         "Details 4",
         "Contact Forms & Interactions",
@@ -50,9 +50,9 @@ export const serviceData = [
     {
       id:5,
       title:"Build a Beach",
-      price: 200,
+      price: 600,
       details: [
-        "Details 1",
+        "Details 5",
         "Contact Forms & Interactions",
         "Social media packet",
         "SEO Strategy",
