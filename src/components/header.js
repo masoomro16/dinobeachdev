@@ -51,7 +51,7 @@ function Header(props) {
                     <Link to="/blog" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Blog</Link>
                     <Link to="/blog" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Resources</Link>
                     <Link to="/about" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>About</Link>
-                    <Link to="/blog" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Contact</Link>  
+                    <Link to="/contact" className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${toggleMenu ? 'text-6xl text-white' : ''}`}>Contact</Link>  
                 </div>
             </nav> 
         </header>
