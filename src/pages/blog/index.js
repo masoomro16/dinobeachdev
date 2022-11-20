@@ -55,7 +55,7 @@ function Blog(props) {
           <div className='w-full mx-auto md:max-w-7xl'>
 
           {/* First Row */}
-          <div className='flex flex-col md:justify-between md:flex-row my-10'>
+          <div className='flex flex-col md:justify-between md:flex-row my-10 md:gap-x-12'>
             {listResults[0]}
             {listResults[1]}
           </div>
