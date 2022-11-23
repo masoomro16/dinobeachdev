@@ -40,7 +40,7 @@ function Layout(props) {
                 backgroundImage: "linear-gradient(to right, #EDA9B2, #23B4D9)",
                 marginBottom: 0
             }}>
-                <p>dinobeach.dev 2024</p>
+                <p className='text-center'>dinobeach.dev 2024</p>
             </footer>
         </div>
     );
