@@ -4,11 +4,9 @@ import { serviceData } from '../constants/serviceData';
 import { FaArrowRight } from 'react-icons/fa';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-const ServiceTitle = ({ service, selectedService, changeSelectedService }) => {
-  const inactiveTitle = "md:text-4xl text-xl mt-12 text-blue font-bold title-text hover:md:text-5xl hover:text-pink";
-  const activeTitle = "mt-12 text-2xl font-bold title-text md:text-5xl text-pink"
-  const arrowStyles = "inline-block h-6 ml-1 md:hidden"
-
+const ServiceTitle = ({service, selectedService, changeSelectedService}) => {
+  const inactiveTitle = "text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
+  const activeTitle = "mt-12 font-bold title-text text-5xl text-pink"
 
   return (
       <div>
