@@ -1,4 +1,8 @@
 import React, {useState} from 'react'
+import {GoTriangleRight, GoTriangleDown} from 'react-icons/go';
+import { serviceData } from '../constants/serviceData';
+import { FaArrowRight } from 'react-icons/fa';
+import { GoPrimitiveDot } from 'react-icons/go';
 
 const ServiceTitle = ({service, selectedService, changeSelectedService, serviceData}) => {
   const inactiveTitle = "text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
