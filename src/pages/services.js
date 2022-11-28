@@ -25,6 +25,7 @@ const Services = (props) => {
         service={service}
         selectedService={selectedService}
         changeSelectedService={changeSelectedService}
+        serviceData={serviceData}
       />
     );
   }
