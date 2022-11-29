@@ -15,8 +15,8 @@ const ServiceImgCol = ({selectedService, serviceData}) => {
 
   const price = selectedService.price;
 
-  const selectedServiceDetails = serviceData.find(({title})=> title === selectedService);
-  console.log("image Col prop: " + selectedServiceDetails.price)
+  const selectedServiceItem = serviceData.find(({title})=> title === selectedService);
+  console.log("image Col prop: " + selectedServiceItem.price)
 
   return (
     <div className='hidden md:block'>
@@ -38,7 +38,7 @@ const ServiceImgCol = ({selectedService, serviceData}) => {
 
       <div className={pricingContainerStyles}>
         <div className={priceLineStyles}>
-          {selectedServiceDetails.price} USD
+          {selectedServiceItem.price} USD
         </div>
         <FaArrowRight className={arrowStyles}/>
       </div>

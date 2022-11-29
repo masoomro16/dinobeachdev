@@ -38,18 +38,20 @@ const Services = (props) => {
   return (
     <Layout>
 
-      <div className='h-[calc(100vh_-_150px)] flex flex-col md:flex-row'>
+      <div className='h-[calc(100vh_-_150px)] flex flex-col md:flex-row overflow-scroll'>
 
-        {/* Title Column */}
-        <div className='flex flex-col min-w-[500px] ml-16'>{serviceData.map(newServiceTitle)}</div>
+        <div className='flex flex-col min-w-[500px] ml-16'>
+          {serviceData.map(newServiceTitle)}
+        </div>
+        
         <ServiceDetailsCol 
           selectedService={selectedService}
         />
+        
         <ServiceImgCol 
           selectedService={selectedService}
           serviceData={serviceData}
         />
-
 
       </div>
     

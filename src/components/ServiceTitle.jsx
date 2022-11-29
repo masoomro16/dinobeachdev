@@ -5,10 +5,14 @@ import { FaArrowRight } from 'react-icons/fa';
 import { GoPrimitiveDot } from 'react-icons/go';
 
 const ServiceTitle = ({service, selectedService, changeSelectedService, serviceData}) => {
-  const inactiveTitle = "text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
-  const activeTitle = "mt-12 font-bold title-text text-5xl text-pink"
+  const inactiveTitle = "text-2xl md:text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
+  const activeTitle = "mt-12 font-bold title-text md:text-5xl text-pink text-3xl"
+  
+  const selectedServiceItem = serviceData.find(({title})=> title === selectedService);
 
-  const selectedServiceDetails = serviceData.find(({title})=> title === selectedService);
+  const currentDetails = selectedServiceItem.details;
+
+  const newDetail = (detail, idx) => <p key={idx+detail}>{detail}</p>
 
   return (
     <div>
@@ -18,13 +22,14 @@ const ServiceTitle = ({service, selectedService, changeSelectedService, serviceD
         >
           {service.title}
       </h2>
-      <div >
-        <div className='md:hidden'>
-                {selectedServiceDetails.details}
+      <div className={`md:hidden ${selectedService === service.title ? 'block' : 'hidden'} content-text`}>
+        <div>
+          {currentDetails.map(newDetail)}
               </div>
               
-              <div className='md:hidden'>
-                {selectedServiceDetails.price}
+              <div className='mt-2'>
+                <div className='inline'> Pricing Starts at {selectedServiceItem.price} USD </div>
+                <FaArrowRight className='h-[8%] w-[8%] arrow2 rounded-full p-1 inline ml-3 mb-1' />
               </div>
       </div>
       
