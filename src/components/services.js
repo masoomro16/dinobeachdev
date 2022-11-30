@@ -38,7 +38,7 @@ function Services() {
                 <p>Not quite sure what you need? Take our quiz to find your perfect fit</p>
             </div>
 
-            <div className="flex flex-wrap flex-col justify-center items-center md:flex-row md:my-20 my-10">
+            <div className="flex flex-wrap flex-col justify-center md:flex-row md:my-20 my-10"> 
                 <ServiceCard {...serviceData[0]}/>
                 <ServiceCard {...serviceData[1]}/>
                 <div className="flex flex-col justify-center w-72 md:w-80 order-last md:order-none ">
