@@ -52,6 +52,33 @@ html {
   background: -webkit-linear-gradient(#EDA9B2, #23B4D9);
 }
 
+.gradient-btn{
+    width: 400px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    border-image: linear-gradient(90deg, #EDA9B2, #23B4D9);
+    border-image-slice: 1;
+    padding: 25px;
+}
+
+.gradient-bg::after{
+  border-radius: 25px;
+}
+
+/* .gradient-btn{
+  position: relative;
+  isolation: isolate;
+}
+
+.gradient-btn::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: pink;
+  /* z-index: -2; */
+
+/* } */ 
+
 .no-scroll {
     height: 100vh;
     overflow: hidden;
