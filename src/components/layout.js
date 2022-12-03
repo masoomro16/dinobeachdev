@@ -3,6 +3,8 @@ import "../styles/style.css"
 import {useStaticQuery, graphql} from 'gatsby'
 import Header from './header';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
+
 // styles
 const pageStyles = {
     color: "#5D6567",
@@ -37,10 +39,23 @@ function Layout(props) {
                 {children}
             </main>
             <footer style={{
-                backgroundImage: "linear-gradient(to right, #EDA9B2, #23B4D9)",
-                marginBottom: 0
-            }}>
-                <p className='text-center'>dinobeach.dev 2024</p>
+                marginBottom: 0,
+                backgroundColor: "#EDA9B2"
+            }}
+                className="flex w-full justify-around text-cream title-text items-center"
+            >
+
+                <div className='my-5 md:my-10 w-1/3 h-full flex justify-between flex-col md:flex-row'>
+                    <Link to='/services'>Services</Link>
+                    <Link to='/blog'>Blog</Link>
+                    <Link to='/about'>About</Link>
+                    <Link to='/contact'>Contact</Link>
+                </div> 
+                
+                <div className='md:my-10'>
+                    <p className='text-3xl'>dinoBeach</p>
+                    <p className='text-2xl text-center'>dev</p>
+                </div>
             </footer>
         </div>
     );
