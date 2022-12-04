@@ -19,7 +19,7 @@ const ServiceImgCol = ({selectedService, serviceData}) => {
   console.log("image Col prop: " + selectedServiceItem.price)
 
   return (
-    <div className='hidden md:block'>
+    <div className='hidden md:block mx-auto'>
       <StaticImage 
         alt='beach'
         src='../images/vintage-beach-short.jpg'

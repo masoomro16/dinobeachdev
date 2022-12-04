@@ -42,7 +42,7 @@ function Layout(props) {
                 marginBottom: 0,
                 backgroundColor: "#EDA9B2"
             }}
-                className="flex w-full justify-around text-cream title-text items-center"
+                className="flex w-full justify-around text-cream title-text items-center relative"
             >
 
                 <div className='my-5 md:my-10 w-1/3 h-full flex justify-between flex-col md:flex-row'>
@@ -53,7 +53,7 @@ function Layout(props) {
                 </div> 
                 
                 <div className='md:my-10'>
-                    <p className='text-3xl'>dinoBeach</p>
+                    <p className='text-3xl'>dinobeach</p>
                     <p className='text-2xl text-center'>dev</p>
                 </div>
             </footer>

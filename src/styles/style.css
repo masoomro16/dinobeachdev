@@ -53,31 +53,35 @@ html {
 }
 
 .gradient-btn{
-    width: 400px;
-    border: 3px solid transparent;
-    border-radius: 25px;
-    border-image: linear-gradient(90deg, #EDA9B2, #23B4D9);
-    border-image-slice: 1;
-    padding: 25px;
+  border: 5px solid;
+  border-image: linear-gradient(90deg, #EDA9B2, #23B4D9);
+  border-image-width: 100%;
+  border-image-repeat: stretch;
 }
 
-.gradient-bg::after{
-  border-radius: 25px;
+.gradient-btn-text{
+  border-image: none !important;
+  background-color: #EDA9B2;
+  z-index: 5;
+  border-image-width: 80%;
 }
 
-/* .gradient-btn{
-  position: relative;
-  isolation: isolate;
+
+/* Creates Gradient Border but unable to change text color */
+.test-button{
+  font-family: 'Aclonica', sans-serif;
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #EDA9B2, #23B4D9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #FAF6EE inset;
 }
-
-.gradient-btn::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: pink;
-  /* z-index: -2; */
-
-/* } */ 
 
 .no-scroll {
     height: 100vh;

@@ -5,8 +5,8 @@ import { FaArrowRight } from 'react-icons/fa';
 import { GoPrimitiveDot } from 'react-icons/go';
 
 const ServiceTitle = ({service, selectedService, changeSelectedService, serviceData}) => {
-  const inactiveTitle = "text-2xl md:text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
-  const activeTitle = "mt-12 font-bold title-text md:text-5xl text-pink text-3xl"
+  const inactiveTitle = "text-xl md:text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
+  const activeTitle = "mt-12 font-bold title-text md:text-5xl text-pink text-2xl mb-4 md:mb-0"
   
   const selectedServiceItem = serviceData.find(({title})=> title === selectedService);
 
