@@ -61,7 +61,7 @@ function Blog(props) {
           </div>
 
           {/* Second Row */}
-          <div className='flex flex-col flex-wrap md:flex-row md:justify-between my-10 w-full'>
+          <div className='flex flex-col content-center flex-wrap md:flex-row md:justify-between my-10 w-full'>
             {listResults.slice(2)}
           </div>
 

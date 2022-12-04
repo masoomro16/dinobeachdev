@@ -6,7 +6,7 @@ import ContactHeader from '../components/contactHeader'
 const Contact = () => {
   return (
     <Layout>
-        <div className='h-[calc(100vh_-_150px)] flex mx-28'>
+        <div className='flex flex-col md:flex-row md:mx-28'>
             <ContactHeader />
             <Mailer />
         </div>

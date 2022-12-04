@@ -4,8 +4,8 @@ import dinoFoot from '../images/trex_footprint.svg';
 const ContactHeader = () => {
     const dinoPrintStyles = 'h-16 hidden md:inline relative'
   return (
-    <div className='max-w-[33%] mt-12'>
-        <h2 className='title-text gradient-text font-extrabold text-7xl'>Interested in working with us? Let's Talk </h2>
+    <div className=' max-w-[75%] md:max-w-[33%] mt-12 mx-auto'>
+        <h2 className='title-text gradient-text font-extrabold text-2xl md:text-7xl'>Interested in working with us? Let's Talk </h2>
         
         {/* dino Prints */}
         <img 
