@@ -45,9 +45,9 @@ function Blog(props) {
 
   const listResults = results.allStrapiPost.edges.map((item, idx) => {
     if(idx===0 || idx===1) 
-        return <FeaturedBlogCard item={item.node}/>
+        return <FeaturedBlogCard key={item.id} item={item.node}/>
     else 
-        return <BlogCard item={item.node} />
+        return <BlogCard key={item.id} item={item.node} />
   })
 
     return (

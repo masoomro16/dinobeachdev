@@ -44,12 +44,14 @@ const Post = (props) => {
       {/* Top Row */}
         <div className='h-1/3 w-full mb-6'>
           <div className="flex flex-row justify-center">
-             <h1 className="title-text gradient-text text-7xl self-center ml-8 w-1/2">Creating Pary Games with Express.js and Socket.io</h1>
-          <GatsbyImage
-            image={getImage(post.image?.localFile)}
-            alt={post.image?.alternativeText}
-            className="rounded-full h-full mr-8 w-1/2"
-          />
+              <h1 className="title-text gradient-text text-7xl self-center ml-8 w-1/2">
+                {post.title}
+              </h1>
+              <GatsbyImage
+                image={getImage(post.image?.localFile)}
+                alt={post.image?.alternativeText || "some image"}
+                className="rounded-full h-full mr-8 w-1/2"
+              />
           </div> 
         </div>
   
