@@ -22,11 +22,14 @@ function Header(props) {
     
     return (
         <header className='p-5 flex  justify-between  items-center md:max-w-7xl max-w-md mx-auto '>
-            <img 
-                src={logo}
-                alt="DinoBeach Logo"
-                className='md:w-2/12 w-4/12 relative md:static md:right-auto'
-            />
+            <Link to="/" className='d:w-2/12 w-4/12 relative md:static md:right-auto'>
+                <img 
+                    src={logo}
+                    alt="DinoBeach Logo"
+                    className=''
+                    width={180}
+                />
+            </Link>
             
            {/* <StaticImage
             alt="DinoBeach Logo"
