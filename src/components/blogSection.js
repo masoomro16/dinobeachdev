@@ -7,6 +7,7 @@ import {graphql, useStaticQuery} from "gatsby"
 
 function BlogSection() {
 
+
   const results = useStaticQuery(graphql `
   query PreviewQuery {
     allStrapiPost(limit: 3, sort: {order: DESC, fields: publishedAt}) {
@@ -15,7 +16,9 @@ function BlogSection() {
           title
           image {
             id
-            url
+            localFile {
+              publicURL
+            }
           }
           id
           publishedAt
