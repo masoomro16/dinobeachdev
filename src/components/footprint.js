@@ -3,7 +3,7 @@ import dinoFoot from '../images/trex_footprint.svg';
 
 function Footprint() {
   return (
-    <div className='mt-20 mb-0 p-5 mx-5 md:mx-[6rem]'>
+    <div className='md:mt-20 mb-0 p-5 mx-5 md:mx-[6rem]'>
         {/* Top ROW */}
          <div className='max-h-4 flex mb-10 justify-between'>
             {/* Print 1 */}

@@ -31,8 +31,8 @@ const serviceData = [
 function Services() {
 
     return (
-        <div className='md:min-h-screen mx-5 md:mx-28 mt-5 relative z-10'>
-            <div className='max-w-[70%] md:my-3'>
+        <div className='md:min-h-screen mx-auto md:mx-28 mt-5 relative z-10'>
+            <div className='max-w-[70%] md:my-3 mx-auto md:mx-0'>
                 <h3 className='context-text text-base md:text-xl'>services</h3>
                 <h2 className='text-2xl md:text-5xl title-text blue-text'>we like to create <span className="gradient-text">pretty</span> websites that work <span className="gradient-text">fast</span></h2> 
                 <p>Not quite sure what you need? Take our quiz to find your perfect fit</p>
@@ -41,8 +41,8 @@ function Services() {
             <div className="flex flex-wrap flex-col justify-center md:flex-row md:my-20 my-10"> 
                 <ServiceCard {...serviceData[0]}/>
                 <ServiceCard {...serviceData[1]}/>
-                <div className="flex flex-col justify-center w-72 md:w-80 order-last md:order-none ">
-                    <h3 className="title-text text-center text-3xl text-blue">Need something more custom? Tell us more</h3>
+                <div className="flex flex-col justify-center w-1/2 md:w-1/5 order-last md:order-none mx-auto md:mx-0">
+                    <h3 className="title-text text-center text-xl md:text-3xl text-blue">Need something more custom? Tell us more</h3>
                 </div>
                 <ServiceCard {...serviceData[2]}/>
                 <ServiceCard {...serviceData[3]}/>

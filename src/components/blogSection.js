@@ -33,7 +33,7 @@ function BlogSection() {
 
   console.log(listResults)
   return (
-    <div className='mb-28 md:mx-28 '>
+    <div className='mb-5 md:mb-28 md:mx-28 '>
       <h2 className='md:text-right text-blue md:text-5xl text-2xl title-text text-center'>blog</h2>
       <img
         src={waves}
