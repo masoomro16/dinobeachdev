@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '../components/layout';
 import leftImg from '../images/about-img-left.png'
@@ -27,4 +28,4 @@ function About(props) {
     );
 }
 
-export default About
+export default About;
