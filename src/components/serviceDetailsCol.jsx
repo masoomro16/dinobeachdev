@@ -7,11 +7,13 @@ const ServiceDetailsCol = ({ selectedService }) => {
   );
 
   const newServiceDetail = (serviceDetail) => (
-    <p className="mt-12 content-text text-xl text-bold">{serviceDetail}</p>
+    <p className="mt-12 content-text service-details text-bold">
+      {serviceDetail}
+    </p>
   );
 
   return (
-    <div className="md:flex flex-col max-w-l hidden">
+    <div className="md:flex flex-col flex-wrap max-w-l hidden">
       {selectedServiceItem.details.map(newServiceDetail)}
     </div>
   );

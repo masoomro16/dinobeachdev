@@ -4,6 +4,8 @@ import { serviceData } from "../constants/serviceData";
 import { FaArrowRight } from "react-icons/fa";
 import { GoPrimitiveDot } from "react-icons/go";
 
+// activetitle font sizing: md:text-5xl text-2xl
+
 const ServiceTitle = ({
   service,
   selectedService,
@@ -11,9 +13,9 @@ const ServiceTitle = ({
   serviceData,
 }) => {
   const inactiveTitle =
-    "text-xl md:text-4xl mt-12 text-blue font-bold title-text hover:text-5xl hover:text-pink";
+    "text-xl md:text-4xl mt-12 text-blue font-bold title-text hover:text-[3.125vw] hover:text-pink";
   const activeTitle =
-    "mt-12 font-bold title-text md:text-5xl text-pink text-2xl mb-4 md:mb-0";
+    "mt-12 font-bold title-text text-pink mb-4 md:mb-0 active-service-card";
 
   const selectedServiceItem = serviceData.find(
     ({ title }) => title === selectedService

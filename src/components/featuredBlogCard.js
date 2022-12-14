@@ -18,7 +18,7 @@ function FeaturedBlogCard(props) {
             onMouseLeave={() => setIsHovered(false)}
           >
             <div className="h-full w-full flex flex-col justify-between">
-              <h1 className={`text-xl mx-8 my-4 title-text md:text-5xl`}>
+              <h1 className={`sub-heading mx-8 my-4 title-text`}>
                 {props.item?.title}
               </h1>
               <p

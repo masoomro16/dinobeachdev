@@ -10,27 +10,24 @@ import dinoFoot from "../images/trex_footprint.svg";
 function Header(props) {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-    // if the user does not close out the menu
-    // but tries to change screen width manually
-    // might not be necessary in production??
-    useEffect(()=> { 
-        if(size.width > 768) {
-            setToggleMenu(false)
-        }
-    })
-    
-    return (
-        <header className='p-5 flex  justify-between  items-center md:max-w-7xl max-w-md mx-auto '>
-            <Link to="/" className='d:w-2/12 w-4/12 relative md:static md:right-auto'>
-                <img 
-                    src={logo}
-                    alt="DinoBeach Logo"
-                    className=''
-                    width={180}
-                />
-            </Link>
-            
-           {/* <StaticImage
+  const size = useWindowSize();
+
+  // if the user does not close out the menu
+  // but tries to change screen width manually
+  // might not be necessary in production??
+  useEffect(() => {
+    if (size.width > 768) {
+      setToggleMenu(false);
+    }
+  });
+
+  return (
+    <header className="p-5 flex  justify-between  items-center md:max-w-7xl max-w-md mx-auto ">
+      <Link to="/" className="d:w-2/12 w-4/12 relative md:static md:right-auto">
+        <img src={logo} alt="DinoBeach Logo" className="" width={180} />
+      </Link>
+
+      {/* <StaticImage
             alt="DinoBeach Logo"
             src="../images/title-logo.svg"
             className='scale-100 relative md:static right-[15%] md:right-auto'

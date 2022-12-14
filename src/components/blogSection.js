@@ -33,7 +33,7 @@ function BlogSection() {
   console.log(listResults);
   return (
     <div className="mb-5 md:mb-28 md:mx-28 ">
-      <h2 className="md:text-right text-blue md:text-5xl text-2xl title-text text-center">
+      <h2 className="md:text-right text-blue sub-heading title-text text-center">
         blog
       </h2>
       <img
@@ -41,7 +41,7 @@ function BlogSection() {
         alt=""
         className="h-24 relative left-[24.5rem] top-12 rotate-[-30deg] hidden md:inline"
       />
-      <div className="flex flex-col items-center md:flex-row md:justify-between space-x-4 md:space-x-8">
+      <div className="flex flex-col items-center md:flex-row md:justify-around space-x-4 md:space-x-8 md:flex-wrap">
         {/* <BlogCard />
         <BlogCard custom="mt-28"/>
         <BlogCard/> */}
