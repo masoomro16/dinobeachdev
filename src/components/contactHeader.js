@@ -5,7 +5,7 @@ const ContactHeader = () => {
   const dinoPrintStyles = "h-16 hidden md:inline relative";
   return (
     <div className=" max-w-[75%] md:max-w-[33%] mt-12 mx-auto">
-      <h2 className="title-text gradient-text font-extrabold text-2xl md:text-7xl">
+      <h2 className="title-text gradient-text font-extrabold page-heading">
         Interested in working with us? Let's Talk{" "}
       </h2>
 

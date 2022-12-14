@@ -9,9 +9,7 @@ function Hero() {
   return (
     <div className="md:h-[calc(100vh_-_150px)] relative flex flex-wrap md:flex-nowrap justify-center items-center mx-5 md:mx-auto md:max-w-7xl max-w-md">
       <div className="flex-col z-20">
-        {/* md:text-8xl text-4xl */}
         <h1 className="block min-h-[300] title-text large-text font-extrabold  gradient-text pt-2">
-          {" "}
           creating fun digital experiences
         </h1>
         <p className="p-2">

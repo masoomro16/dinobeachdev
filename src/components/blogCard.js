@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import { FaArrowRight } from "react-icons/fa";
 
+//? Why is the first card way more in the other cards on the home page
+
 function BlogCard(props) {
   const [isHovered, setIsHovered] = useState(false);
   console.log("blogCardprops: ", props);
@@ -16,7 +18,7 @@ function BlogCard(props) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className=" h-[90%] w-[90%] mt-[18.725px] ml-[18.725px] flex  flex-col justify-between rounded-xl">
+          <div className=" h-[90%] w-[90%] mt-[18.725px] flex  flex-col justify-between rounded-xl">
             <h3 className=" text-xl md:text-2xl title-text mx-5 mt-5">
               {props.item?.title}
             </h3>

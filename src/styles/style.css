@@ -21,6 +21,26 @@ html {
   font-size: clamp(2.25rem, 6.25vw, 96px);
 }
 
+.sub-heading {
+  font-size: clamp(1.5rem, 3.125vw, 48px);
+}
+
+.page-heading {
+  font-size: clamp(1.5rem, 4.6875vw, 72px);
+}
+
+.active-service-card {
+  font-size: clamp(1.5rem, 3.125vw, 48px);
+}
+
+.inactive-service-card {
+  font-size: clamp(1.5rem, 2.3438vw, 20px);
+}
+
+.service-details {
+  font-size: clamp(1rem, 1.3021vw, 1.5rem);
+}
+
 .blue-text {
   color: #3c97be;
 }

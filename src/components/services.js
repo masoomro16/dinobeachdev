@@ -33,7 +33,7 @@ function Services() {
   return (
     <div className="md:min-h-screen mx-auto md:mx-28 mt-5 relative z-10">
       <div className="max-w-[70%] md:my-3 mx-auto md:mx-0">
-        <h3 className="context-text text-base md:text-xl">services</h3>
+        <h3 className="context-text sub-title">services</h3>
         <h2 className="text-2xl md:text-5xl title-text blue-text">
           we like to create <span className="gradient-text">pretty</span>{" "}
           websites that work <span className="gradient-text">fast</span>
