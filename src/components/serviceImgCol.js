@@ -9,29 +9,37 @@ const ServiceImgCol = ({ selectedService, serviceData }) => {
     ({ title }) => title === selectedService
   );
   console.log("image Col prop: " + selectedServiceItem.price);
-
+  // Old width: w-96 h-4/5
   return (
-    <div className="hidden md:block mx-auto">
-      <StaticImage
-        alt="beach"
-        src="../images/vintage-beach-short.jpg"
-        className="h-4/5 scale-[.90] rounded-t-[45%] w-96"
-      />
+    <div className="hidden md:block mx-auto min-w-[33vw]">
+      {/* Goal is 384px width */}
+      {/* flex flex-col flex-wrap */}
+      <div className="relative">
+        <StaticImage
+          alt="beach"
+          src="../images/vintage-beach-short.jpg"
+          className="relative h-full scale-[.90] rounded-t-[45%] w-[25vw]"
+        />
 
-      <StaticImage
-        alt="dinoBeach-stamp"
-        src="../images/stamp_p.svg"
-        className="absolute bottom-[30%] left-[85%] z-10 rotating"
-      />
+        {/* old width for above - 96 */}
 
-      <div className="">
-        <div className="content-text text-xl mb-5 ml-[1rem]">
+        {/* old width for below - none */}
+
+        <StaticImage
+          alt="dinoBeach-stamp"
+          src="../images/stamp_p.svg"
+          className="absolute right-[20%] top-[70%] z-10 rotating w-[12.4349vw]"
+        />
+      </div>
+
+      <div className="mt-10">
+        <div className="content-text ml-[1rem] pricing-small-text">
           Pricing Starts at
         </div>
-
-        <div className="title-text text-4xl text-center flex items-center ml-[1rem]">
+        {/*old arrow width w-20  */}
+        <div className="title-text text-4xl text-center flex items-center ml-[1rem] price-text">
           <div className="text-pink">{selectedServiceItem.price} USD</div>
-          <FaArrowRight className="rounded-full arrow2 p-2 h-20 w-20  inline mb-5 hover:scale-110 ml-8" />
+          <FaArrowRight className="rounded-full arrow2 p-2 h-20 inline mb-5 hover:scale-110 ml-[2.0833vw] w-[5.2083vw]" />
         </div>
       </div>
     </div>

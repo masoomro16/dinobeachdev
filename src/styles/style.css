@@ -35,11 +35,21 @@ html {
 }
 
 .inactive-service-card {
-  font-size: clamp(1.5rem, 2.3438vw, 20px);
+  font-size: clamp(1rem, 2.3438vw, 36px);
+  line-height: 1.75rem;
 }
 
 .service-details {
   font-size: clamp(1rem, 1.3021vw, 1.5rem);
+}
+
+.pricing-small-text {
+  font-size: clamp(1rem, 1.5625vw, 24px);
+}
+
+.price-text {
+  font-size: clamp(1rem, 2.3438vw, 36px);
+  line-height: 1.75;
 }
 
 .blue-text {
@@ -53,6 +63,10 @@ html {
 .content-text {
   font-family: "ABeeZee", sans-serif;
   color: #5d6567;
+}
+
+.pricing-text {
+  font-size: clamp(24px, 1.3021vw, 1.25rem);
 }
 
 .no-move:hover {

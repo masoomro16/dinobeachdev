@@ -35,8 +35,8 @@ const Services = (props) => {
 
   return (
     <Layout>
-      <div className="flex flex-col md:flex-row mt-5 mb-10">
-        <div className="flex flex-col md:min-w-[500px] ml-16">
+      <div className="flex flex-col md:flex-row md:justify-around mt-5 mb-10">
+        <div className="flex flex-col basis-1 ml-16">
           {serviceData.map(newServiceTitle)}
         </div>
 

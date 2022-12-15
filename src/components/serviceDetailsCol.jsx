@@ -13,7 +13,7 @@ const ServiceDetailsCol = ({ selectedService }) => {
   );
 
   return (
-    <div className="md:flex flex-col flex-wrap max-w-l hidden">
+    <div className="md:flex flex-col flex-wrap min-w-[33vw] max-w-l hidden">
       {selectedServiceItem.details.map(newServiceDetail)}
     </div>
   );
