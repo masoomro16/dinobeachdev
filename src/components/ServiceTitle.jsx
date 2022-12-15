@@ -12,9 +12,9 @@ const ServiceTitle = ({
   serviceData,
 }) => {
   const inactiveTitle =
-    "text-xl md:text-4xl mt-12 text-blue font-bold title-text hover:scale-110 hover:text-pink";
+    "inactive-service-card mt-12 text-blue font-bold title-text hover:scale-110 hover:text-pink";
   const activeTitle =
-    "mt-12 font-bold title-text text-pink mb-4 md:mb-0 active-service-card";
+    "z-10 mt-12 font-bold title-text text-pink mb-4 md:mb-0 active-service-card";
 
   const selectedServiceItem = serviceData.find(
     ({ title }) => title === selectedService
@@ -25,7 +25,7 @@ const ServiceTitle = ({
   const newDetail = (detail, idx) => <p key={idx + detail}>{detail}</p>;
 
   return (
-    <div>
+    <div className="min-w-[33vw]">
       <h2
         className={
           selectedService === service.title ? activeTitle : inactiveTitle
