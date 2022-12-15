@@ -4,8 +4,7 @@ import { serviceData } from "../constants/serviceData";
 import { FaArrowRight } from "react-icons/fa";
 import { GoPrimitiveDot } from "react-icons/go";
 
-// activetitle font sizing: md:text-5xl text-2xl
-
+// hover inactive text: hover:text-[3.125vw]
 const ServiceTitle = ({
   service,
   selectedService,
@@ -13,7 +12,7 @@ const ServiceTitle = ({
   serviceData,
 }) => {
   const inactiveTitle =
-    "text-xl md:text-4xl mt-12 text-blue font-bold title-text hover:text-[3.125vw] hover:text-pink";
+    "text-xl md:text-4xl mt-12 text-blue font-bold title-text hover:scale-110 hover:text-pink";
   const activeTitle =
     "mt-12 font-bold title-text text-pink mb-4 md:mb-0 active-service-card";
 

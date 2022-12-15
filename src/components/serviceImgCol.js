@@ -3,15 +3,6 @@ import { FaArrowRight } from "react-icons/fa";
 import { StaticImage } from "gatsby-plugin-image";
 
 const ServiceImgCol = ({ selectedService, serviceData }) => {
-  // Styles
-  const imageStyles = "h-4/5 scale-[.90] rounded-t-[45%] w-96";
-  const stampStyles = "absolute bottom-[20%] left-[80%] z-10 rotating";
-  const pricingLine1Styles = "content-text text-xl text-left mb-5";
-  const pricingContainerStyles = "title-text text-4xl text-center flex";
-  const priceLineStyles = "text-pink";
-  const arrowStyles =
-    "arrow2 rounded-full h-20 w-20 p-2 absolute left-[80%] bottom-[5%] hover:h-24 hover:w-24";
-
   const price = selectedService.price;
 
   const selectedServiceItem = serviceData.find(
@@ -24,20 +15,24 @@ const ServiceImgCol = ({ selectedService, serviceData }) => {
       <StaticImage
         alt="beach"
         src="../images/vintage-beach-short.jpg"
-        className={imageStyles}
+        className="h-4/5 scale-[.90] rounded-t-[45%] w-96"
       />
 
       <StaticImage
         alt="dinoBeach-stamp"
         src="../images/stamp_p.svg"
-        className={stampStyles}
+        className="absolute bottom-[30%] left-[85%] z-10 rotating"
       />
 
-      <div className={pricingLine1Styles}>Pricing Starts at</div>
+      <div className="">
+        <div className="content-text text-xl mb-5 ml-[1rem]">
+          Pricing Starts at
+        </div>
 
-      <div className={pricingContainerStyles}>
-        <div className={priceLineStyles}>{selectedServiceItem.price} USD</div>
-        <FaArrowRight className={arrowStyles} />
+        <div className="title-text text-4xl text-center flex items-center ml-[1rem]">
+          <div className="text-pink">{selectedServiceItem.price} USD</div>
+          <FaArrowRight className="rounded-full arrow2 p-2 h-20 w-20  inline mb-5 hover:scale-110 ml-8" />
+        </div>
       </div>
     </div>
   );
