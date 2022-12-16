@@ -1,6 +1,6 @@
 import React from "react";
-import BlogCard from "./blogCard";
-import waves from "../images/waves.svg";
+import BlogCard from "../blogPage/blogCard";
+import waves from "../../images/waves.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
 // Will need to change to map the first 3 in blog articles once we have data
@@ -32,14 +32,14 @@ function BlogSection() {
 
   console.log(listResults);
   return (
-    <div className="mb-5 md:mb-28 md:mx-28 ">
+    <div className="mb-5 md:mb-28 md:mx-28 relative">
       <h2 className="md:text-right text-blue sub-heading title-text text-center">
         blog
       </h2>
       <img
         src={waves}
         alt=""
-        className="h-24 relative left-[24.5rem] top-12 rotate-[-30deg] hidden md:inline"
+        className="waves h-24 absolute left-[24.5rem] top-12 rotate-[-30deg] z-10"
       />
       <div className="flex flex-col items-center md:flex-row md:justify-around space-x-4 md:space-x-8 md:flex-wrap">
         {/* <BlogCard />

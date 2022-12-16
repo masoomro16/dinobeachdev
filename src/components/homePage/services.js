@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "./serviceCard";
+import ServiceCard from "../servicesPage/serviceCard";
 
 const serviceData = [
   {

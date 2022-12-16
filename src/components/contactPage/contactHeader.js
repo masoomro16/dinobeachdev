@@ -1,5 +1,5 @@
 import React from "react";
-import dinoFoot from "../images/trex_footprint.svg";
+import dinoFoot from "../../images/trex_footprint.svg";
 
 const ContactHeader = () => {
   const dinoPrintStyles = "h-16 hidden md:inline relative";

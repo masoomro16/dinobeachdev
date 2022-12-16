@@ -1,7 +1,8 @@
 import React from "react";
+import "../styles/contactPage.styles.css";
 import Layout from "../components/layout";
-import Mailer from "../components/mailer";
-import ContactHeader from "../components/contactHeader";
+import Mailer from "../components/contactPage/mailer";
+import ContactHeader from "../components/contactPage/contactHeader";
 
 const Contact = () => {
   return (

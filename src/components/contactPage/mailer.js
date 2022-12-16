@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import "../styles/style.css";
 import emailjs from "@emailjs/browser";
 
 const Mailer = () => {

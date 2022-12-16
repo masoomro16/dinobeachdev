@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import "../styles/servicesPage.styles.css";
 import Layout from "../components/layout";
-import ServiceTitle from "../components/ServiceTitle";
+import ServiceTitle from "../components/servicesPage/ServiceTitle";
 import { serviceData } from "../constants/serviceData";
-import ServiceDetailsCol from "../components/serviceDetailsCol";
-import ServiceImgCol from "../components/serviceImgCol";
+import ServiceDetailsCol from "../components/servicesPage/serviceDetailsCol";
+import ServiceImgCol from "../components/servicesPage/serviceImgCol";
 
 const Services = (props) => {
   // Selected Service State
