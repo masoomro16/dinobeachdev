@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GoTriangleRight, GoTriangleDown } from "react-icons/go";
-import { serviceData } from "../constants/serviceData";
+import { serviceData } from "../../constants/serviceData";
 import { FaArrowRight } from "react-icons/fa";
 import { GoPrimitiveDot } from "react-icons/go";
 

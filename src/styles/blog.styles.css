@@ -1,0 +1,11 @@
+.arrow {
+  color: #faf6ee;
+}
+
+.card {
+  background: #faf6ee;
+}
+.card:hover {
+  background: linear-gradient(90deg, #eda9b2, #23b4d9);
+  color: #faf6ee;
+}

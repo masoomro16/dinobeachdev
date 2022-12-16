@@ -1,9 +1,10 @@
 import React from "react";
+import "../../styles/blog.styles.css";
 import Layout from "../../components/layout";
 import { graphql, useStaticQuery } from "gatsby";
 
-import BlogCard from "../../components/blogCard";
-import FeaturedBlogCard from "../../components/featuredBlogCard";
+import BlogCard from "../../components/blogPage/blogCard";
+import FeaturedBlogCard from "../../components/blogPage/featuredBlogCard";
 import { list } from "postcss";
 
 function Blog(props) {

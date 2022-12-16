@@ -1,11 +1,12 @@
 import * as React from "react";
+import "../styles/style.css";
+import "../styles/homePage.styles.css";
 import Layout from "../components/layout";
-import Hero from "../components/hero";
-import Services from "../components/services";
-import BlogSection from "../components/blogSection";
-import footprint from "../components/footprint";
+import Hero from "../components/homePage/hero";
+import Services from "../components/homePage/services";
+import BlogSection from "../components/homePage/blogSection";
 import { StaticImage } from "gatsby-plugin-image";
-import Footprint from "../components/footprint";
+import Footprint from "../components/homePage/footprint";
 
 // markup
 const IndexPage = () => {

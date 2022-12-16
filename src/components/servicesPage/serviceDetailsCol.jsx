@@ -1,5 +1,5 @@
 import React from "react";
-import { serviceData } from "../constants/serviceData";
+import { serviceData } from "../../constants/serviceData";
 
 const ServiceDetailsCol = ({ selectedService }) => {
   const selectedServiceItem = serviceData.find(

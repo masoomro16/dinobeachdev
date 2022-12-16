@@ -16,46 +16,33 @@ html {
   box-sizing: border-box;
 }
 
-/* Typography */
-.large-text {
-  font-size: clamp(2.25rem, 6.25vw, 96px);
-  line-height: 1;
-}
-
+/* Use in Blog Page and Home Page */
 .sub-heading {
   font-size: clamp(1.5rem, 3.125vw, 48px);
 }
 
+/* Used in Contact Page and Home Page */
 .page-heading {
   font-size: clamp(1.5rem, 4.6875vw, 72px);
 }
 
-.active-service-card {
-  font-size: clamp(1.5rem, 3.125vw, 48px);
+/* Not Used */
+.min-margin {
+  padding: max(10em, auto);
 }
 
-.inactive-service-card {
-  font-size: clamp(1rem, 2.3438vw, 36px);
-  line-height: 1.75rem;
-}
-
-.service-details {
-  font-size: clamp(1rem, 1.3021vw, 1.5rem);
-}
-
-.pricing-small-text {
-  font-size: clamp(1rem, 1.5625vw, 24px);
-}
-
-.price-text {
-  font-size: clamp(1rem, 2.3438vw, 36px);
-  line-height: 1.75;
-}
-
+/* Do I need this? Should be in tailwindCSS config file */
 .blue-text {
   color: #3c97be;
 }
 
+/* For return from Covid: Need to apply class still and test out - not sure about min on clamp yet */
+.navbar-links-text {
+  width: clamp(12px, 1.1719vw, 1.125rem);
+  line-height: 1.75rem;
+}
+
+/* ? Maybe moves these to tailwindConfig file? */
 .title-text {
   font-family: "Aclonica", sans-serif;
 }
@@ -63,14 +50,6 @@ html {
 .content-text {
   font-family: "ABeeZee", sans-serif;
   color: #5d6567;
-}
-
-.pricing-text {
-  font-size: clamp(24px, 1.3021vw, 1.25rem);
-}
-
-.no-move:hover {
-  margin-bottom: -4px;
 }
 
 .gradient-text {
@@ -90,73 +69,6 @@ html {
 
 .gradient-bg {
   background: -webkit-linear-gradient(#eda9b2, #23b4d9);
-}
-
-.gradient-btn {
-  border: 5px solid;
-  border-image: linear-gradient(90deg, #eda9b2, #23b4d9);
-  border-image-width: 100%;
-  border-image-repeat: stretch;
-}
-
-.gradient-btn-text {
-  border-image: none !important;
-  background-color: #eda9b2;
-  z-index: 5;
-  border-image-width: 80%;
-}
-
-/* Creates Gradient Border but unable to change text color */
-.test-button {
-  font-family: "Aclonica", sans-serif;
-  border-radius: 100rem;
-  padding: 1rem;
-  font-size: 1rem;
-  padding: 0.5rem 3rem;
-  color: black;
-  /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
-  border: solid 3px transparent;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(90deg, #eda9b2, #23b4d9);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #faf6ee inset;
-}
-
-.no-scroll {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.nav-img:hover {
-  /* background-image: url(../images/trex_footprint.svg); */
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.arrow {
-  color: #faf6ee;
-}
-
-.fill-arrow {
-  color: #ffde9d;
-  background-color: #5d6567;
-}
-
-.arrow2 {
-  background-color: #ffde9d;
-  color: #5d6567;
-}
-
-.card {
-  background: #faf6ee;
-}
-.card:hover {
-  background: linear-gradient(90deg, #eda9b2, #23b4d9);
-  color: #faf6ee;
 }
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
