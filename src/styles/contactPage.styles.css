@@ -12,6 +12,10 @@
   border-image-width: 80%;
 }
 
+.contact-heading {
+  font-size: clamp(0.75rem, 4.6875vw, 72px);
+}
+
 /* Attempts to Get Goal Graident Button - Classes not currently in use */
 /* Creates Gradient Border but unable to change text color */
 .test-button {

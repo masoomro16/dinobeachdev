@@ -7,7 +7,7 @@ import ContactHeader from "../components/contactPage/contactHeader";
 const Contact = () => {
   return (
     <Layout>
-      <div className="flex flex-col md:flex-row md:mx-28">
+      <div className="flex flex-col md:flex-row md:mx-[7.2917vw]">
         <ContactHeader />
         <Mailer />
       </div>

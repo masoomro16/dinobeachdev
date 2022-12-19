@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "../servicesPage/serviceCard";
+import ServiceCard from "../homePage/serviceCard";
 
 const serviceData = [
   {
@@ -47,7 +47,8 @@ function Services() {
         <ServiceCard {...serviceData[0]} />
         <ServiceCard {...serviceData[1]} />
         <div className="flex flex-col justify-center w-1/2 md:w-1/5 order-last md:order-none mx-auto md:mx-0">
-          <h3 className="title-text text-center text-xl md:text-3xl text-blue">
+          {/* For h3 on mobile: text-xl */}
+          <h3 className="title-text text-center custom-text text-blue">
             Need something more custom? Tell us more
           </h3>
         </div>
