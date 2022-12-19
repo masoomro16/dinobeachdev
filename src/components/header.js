@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import logo from "../images/title-logo.svg";
 import wavesMenu from "../images/waves.svg";
-import dinoFoot from "../images/trex_footprint.svg";
 
 function Header(props) {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -22,7 +20,7 @@ function Header(props) {
   });
 
   return (
-    <header className="p-5 flex  justify-between  items-center md:max-w-7xl max-w-md mx-auto ">
+    <header className="p-5 flex  justify-between  items-center md:max-w-7xl max-w-md mx-auto">
       <Link to="/" className="d:w-2/12 w-4/12 relative md:static md:right-auto">
         <img src={logo} alt="DinoBeach Logo" className="" width={180} />
       </Link>
@@ -33,6 +31,7 @@ function Header(props) {
             className='scale-100 relative md:static right-[15%] md:right-auto'
             /> */}
 
+      {/* old Links font md:text-base */}
       <nav className="justify-around">
         <div onClick={() => setToggleMenu(true)}>
           <img
@@ -60,48 +59,48 @@ function Header(props) {
           />
           <Link
             to="/"
-            className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${
-              toggleMenu ? "text-6xl text-white" : ""
+            className={`title-text lg:text-lg mx-6 hover:text-blue no-move ${
+              toggleMenu ? "text-6xl text-white" : "md:text[1.0417vw]"
             }`}
           >
             Home
           </Link>
           <Link
             to="/services"
-            className={`title-text md:text-base lg:text-lg mx-6 hover:text-blue no-move ${
-              toggleMenu ? "text-6xl text-white" : ""
+            className={`title-text lg:text-lg mx-6 hover:text-blue no-move ${
+              toggleMenu ? "text-6xl text-white" : "md:text[1.0417vw]"
             }`}
           >
             Services
           </Link>
           <Link
             to="/blog"
-            className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${
-              toggleMenu ? "text-6xl text-white" : ""
+            className={`title-text lg:text-lg mx-6 hover:text-blue no-move ${
+              toggleMenu ? "text-6xl text-white" : "md:text[1.0417vw]"
             }`}
           >
             Blog
           </Link>
           <Link
             to="/blog"
-            className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${
-              toggleMenu ? "text-6xl text-white" : ""
+            className={`title-text lg:text-lg mx-6 hover:text-blue no-move ${
+              toggleMenu ? "text-6xl text-white" : "md:text[1.0417vw]"
             }`}
           >
             Resources
           </Link>
           <Link
             to="/about"
-            className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${
-              toggleMenu ? "text-6xl text-white" : ""
+            className={`title-text lg:text-lg mx-6 hover:text-blue no-move ${
+              toggleMenu ? "text-6xl text-white" : "md:text[1.0417vw]"
             }`}
           >
             About
           </Link>
           <Link
             to="/contact"
-            className={`title-text  md:text-base lg:text-lg mx-6 hover:text-blue no-move ${
-              toggleMenu ? "text-6xl text-white" : ""
+            className={`title-text lg:text-lg mx-6 hover:text-blue no-move ${
+              toggleMenu ? "text-6xl text-white" : "md:text[1.0417vw]"
             }`}
           >
             Contact
@@ -114,6 +113,7 @@ function Header(props) {
 
 export default Header;
 
+// Links
 /*
 hover state later
 hover:after:content-[url("../images/trex_footprint.svg")]
