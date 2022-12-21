@@ -3,9 +3,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { stamp } from "../../images/stamp_p.svg";
 
 function Hero() {
-  console.log("Height: " + window.innerHeight);
-  console.log("Width: " + window.innerWidth);
-
   // old margins: mx-5 md:mx-auto
 
   return (

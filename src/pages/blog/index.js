@@ -42,8 +42,6 @@ function Blog(props) {
     }
   `);
 
-  console.log("blog results: ", results);
-
   const listResults = results.allStrapiPost.edges.map((item, idx) => {
     if (idx === 0 || idx === 1)
       return <FeaturedBlogCard key={item.id} item={item.node} />;
@@ -56,11 +54,17 @@ function Blog(props) {
         {/* First Row */}
         {/* Was md:gap-x-12 */}
         {/* md:gap-x-[3.125vw] */}
+
+        {/* //! Note about fixing spacing issue: 
+        Attempting to keep the space around each column when minimized
+         manually (non-mobile). The max-w- works with the top row but  it
+        shouldn't. The items spill over but the space remains like we want. The
+        same doesn't work on the second row. Need to research more... 
+        */}
         <div className=" md:max-w-[100%] flex flex-col  mx-auto content-center justify-around md:flex-row my-10 md:gap-x-12 border-2 border-solid border-blue">
           {listResults[0]}
           {listResults[1]}
         </div>
-
         {/* Second Row */}
         <div className="md:max-w-[90%] flex flex-col mx-auto content-center flex-wrap md:flex-row md:justify-between my-10 border-2 border-blue border-solid">
           {listResults.slice(2)}

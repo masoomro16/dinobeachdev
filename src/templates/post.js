@@ -34,7 +34,6 @@ export const query = graphql`
 
 const Post = (props) => {
   const post = props.data.strapiPost;
-  console.log("post data: ", post);
   return (
     <Layout pageTitle={post.title}>
       <div className="flex flex-col items-center mx-32">

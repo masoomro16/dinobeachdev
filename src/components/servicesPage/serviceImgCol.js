@@ -8,7 +8,6 @@ const ServiceImgCol = ({ selectedService, serviceData }) => {
   const selectedServiceItem = serviceData.find(
     ({ title }) => title === selectedService
   );
-  console.log("image Col prop: " + selectedServiceItem.price);
   // Old width: w-96 h-4/5
   return (
     <div className="hidden md:block mx-auto min-w-[33vw]">

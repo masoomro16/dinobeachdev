@@ -6,7 +6,6 @@ import { FaArrowRight } from "react-icons/fa";
 
 function BlogCard(props) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log("blogCardprops: ", props);
 
   return (
     <Link to={`/blog/${props.item?.id}`}>

@@ -24,13 +24,10 @@ function BlogSection() {
     }
   `);
 
-  console.log("last 3 results: ", results);
   const listResults = results.allStrapiPost.edges.map((item) => {
-    console.log("item: ", item);
     return <BlogCard item={item.node} key={item.id} />;
   });
 
-  console.log(listResults);
   return (
     <div className="mb-5 md:mb-28 md:mx-28 relative">
       <h2 className="md:text-right text-blue sub-heading title-text text-center">

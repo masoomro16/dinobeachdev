@@ -1,3 +1,8 @@
+select {
+  font-family: "ABeeZee", sans-serif;
+  color: #5d6567;
+}
+
 .gradient-btn {
   border: 5px solid;
   border-image: linear-gradient(90deg, #eda9b2, #23b4d9);
