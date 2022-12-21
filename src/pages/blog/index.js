@@ -54,13 +54,15 @@ function Blog(props) {
     <Layout pageTitle="Blog">
       <div className="w-full mx-auto md:max-w-7xl">
         {/* First Row */}
-        <div className="flex flex-col md:justify-between md:flex-row my-10 md:gap-x-12">
+        {/* Was md:gap-x-12 */}
+        {/* md:gap-x-[3.125vw] */}
+        <div className=" md:max-w-[100%] flex flex-col  mx-auto content-center justify-around md:flex-row my-10 md:gap-x-12 border-2 border-solid border-blue">
           {listResults[0]}
           {listResults[1]}
         </div>
 
         {/* Second Row */}
-        <div className="flex flex-col content-center flex-wrap md:flex-row md:justify-between my-10 w-full">
+        <div className="md:max-w-[90%] flex flex-col mx-auto content-center flex-wrap md:flex-row md:justify-between my-10 border-2 border-blue border-solid">
           {listResults.slice(2)}
         </div>
       </div>
