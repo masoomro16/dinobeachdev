@@ -10,8 +10,9 @@ function BlogCard(props) {
 
   return (
     <Link to={`/blog/${props.item?.id}`}>
+      {/* old width and height are 96 */}
       <div
-        className={`gradient-background h-72 w-72 md:h-96 md:w-96 rounded-xl my-6 flex justify-center self-center md:${props.custom} shrink flex-grow-1 basis-1/3`}
+        className={`gradient-background h-72 w-72 md:h-[51.4745vh] md:w-[25vw] rounded-xl my-6 flex justify-center self-center md:${props.custom} basis-1/3`}
       >
         <div
           className="h-[97.5%] w-[97.5%] rounded-xl self-center card"

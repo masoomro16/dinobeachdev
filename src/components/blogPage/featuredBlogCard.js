@@ -7,9 +7,12 @@ function FeaturedBlogCard(props) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 self-center">
       <Link to={`/blog/${props.item?.id}`}>
-        <div className="gradient-background rounded-xl h-80 flex flex-1  justify-center content-center self-center my-6 ">
+        {/* justify-center content-center self-center */}
+        {/* 616pxw + 320px height */}
+        {/* old values were w-auto and h-80 */}
+        <div className="gradient-background rounded-xl h-72 w-72 md:w-[40.1042vw] md:h-[42.8954vh] flex justify-center my-6 ">
           {/* <div className='gradient-background rounded-xl h-80 w-80 md:w-[47%] flex justify-center content-center self-center my-6 min-w-[600px]'> */}
           {/* <div className='h-[97.5%] w-[97.5%] card rounded-xl justify-self-center self-center' onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}> */}
           <div
