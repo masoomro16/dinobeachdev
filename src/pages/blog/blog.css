@@ -1,16 +1,15 @@
-.grid-blog-container{
-    display: grid;
-    grid-template-areas: 
+.grid-blog-container {
+  display: grid;
+  grid-template-areas:
     "header header"
     "regular regular regular"
-    "regular regular regular"
-    ;
+    "regular regular regular";
 }
 
-.grid-header{
-    grid-area: header;
+.grid-header {
+  grid-area: header;
 }
 
-.grid-regular{
-    grid-area: regular;
+.grid-regular {
+  grid-area: regular;
 }

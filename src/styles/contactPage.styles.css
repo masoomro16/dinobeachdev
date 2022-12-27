@@ -1,0 +1,38 @@
+.gradient-btn {
+  border: 5px solid;
+  border-image: linear-gradient(90deg, #eda9b2, #23b4d9);
+  border-image-width: 100%;
+  border-image-repeat: stretch;
+}
+
+.gradient-btn-text {
+  border-image: none !important;
+  background-color: #eda9b2;
+  z-index: 5;
+  border-image-width: 80%;
+}
+
+.contact-heading {
+  font-size: clamp(0.75rem, 4.6875vw, 72px);
+}
+
+/* Attempts to Get Goal Graident Button - Classes not currently in use */
+/* Creates Gradient Border but unable to change text color */
+.test-button {
+  font-family: "Aclonica", sans-serif;
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  color: black;
+  /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90deg, #eda9b2, #23b4d9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #faf6ee inset;
+}
