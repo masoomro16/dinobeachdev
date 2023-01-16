@@ -6,10 +6,12 @@ import rightImg from "../images/about-img-right.png";
 function About(props) {
   return (
     <Layout pageTitle="About">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-rows-[125px_400px_125px] grid-cols-5">
+      {/* mx-[7.7865vw] md:max-w-7xl max-w-md */}
+      <div className="mx-8 md:mx-auto max-w-7xl">
+      {/* <div className="mx-auto max-w-7xl"> */}
+        <div className="grid grid-rows-[125px_400px_125px] grid-cols-5 justify-items-stretch">
           <img
-            className="col-span-2 row-start-1 row-end-2 col-start-1"
+            className="col-span-2 row-start-1  col-start-1"
             src={leftImg}
             alt="about image"
           />
@@ -26,11 +28,15 @@ function About(props) {
           />
         </div>
         <div>
-          <p>Hello</p>
-          <p>Hello</p>
-          <p>Hello</p>
-          <p>Hello</p>
-          <p>Hello</p>
+          <p>
+          In the north of Amsterdam a self-sufficient city state called 
+          Republica is rising. A former industrial area is being transformed 
+          into a bustling city district. Short Guy is a build-to-rent housing 
+          scheme within an assembly of six buildings. Republica is the 
+          masterplan of Marc Koehler Architects. The design of Short Guy is a 
+          collaboration between Loer Architecten and Loerakker Olsson Architects, 
+          commissioned by developers Banlieu and Vink Bouw.
+          </p>
         </div>
       </div>
     </Layout>

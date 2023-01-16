@@ -41,7 +41,9 @@ function BlogSection() {
         alt=""
         className="waves h-24 absolute left-[24.5rem] top-12 rotate-[-30deg] z-10"
       />
-      <div className="flex flex-col items-center md:flex-row md:justify-around space-x-4 md:space-x-8 md:flex-wrap">
+      {/* <div className="flex flex-col items-center md:flex-row md:justify-around space-x-4 md:space-x-8 md:flex-wrap"> */}
+      <div className="md:max-w-[100%] flex flex-col mx-auto content-center flex-wrap md:flex-row mb-10 gap-x-6">
+     
         {/* <BlogCard />
         <BlogCard custom="mt-28"/>
         <BlogCard/> */}

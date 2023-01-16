@@ -9,7 +9,7 @@ function BlogSection() {
 
 
   const results = useStaticQuery(graphql `
-  query PreviewQuery {
+  query MyQuery {
     allStrapiPost(limit: 3, sort: {order: DESC, fields: publishedAt}) {
       edges {
         node {

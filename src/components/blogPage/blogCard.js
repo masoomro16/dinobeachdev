@@ -9,10 +9,13 @@ function BlogCard(props) {
   console.log("blogCardprops: ", props);
 
   return (
-    <Link to={`/blog/${props.item?.id}`}>
+    // w-[calc(100%_-_10rem)]
+    <Link to={`/blog/${props.item?.id}` } className="flex-[0_0_calc(33.3333%_-_20px)]">
       {/* old width and height are 96 */}
+
+      {/* w-72 md:w-[25vw] */}
       <div
-        className={`gradient-background h-72 w-72 md:h-[51.4745vh] md:w-[25vw] rounded-xl my-6 flex justify-center self-center md:${props.custom} basis-1/3`}
+        className={`gradient-background h-72 md:h-[51.4745vh] rounded-xl my-6 flex justify-center self-center md:${props.custom} `}
       >
         <div
           className="h-[97.5%] w-[97.5%] rounded-xl self-center card"
